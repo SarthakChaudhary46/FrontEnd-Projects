@@ -3,4 +3,4 @@
 
 
 
-#### Project  2 - [Random Color Generator](https://github.com/SarthakChaudhary46/100-Days-Of-CODE/tree/main/Day%201) 
+#### Project  2 - [Random Color Generator](https://github.com/SarthakChaudhary46/FrontEnd-Projects/tree/main/Project-2) 
