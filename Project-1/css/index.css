@@ -1,0 +1,32 @@
+body {
+    background-color: black;
+    color: powderblue;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem; /* Adjust the font size as desired */
+    margin-top: 10px;
+}
+
+.title2 {
+    margin-top: 10px;
+    font-size: 1.5rem; /* Adjust the font size as desired */
+}
+
+.col {
+    height: 100px;
+    margin:5% auto; /* Center align the column */
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+input{
+    height: 50px;
+    width: 50%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: transparent;
+    border-radius: 8px;
+}
