@@ -4,6 +4,7 @@
                                     FrontEnd Practice Projects Using HTML, CSS, JavaScript
 
 
+### Project  1 - [Random Color Generator - Code](https://github.com/SarthakChaudhary46/FrontEnd-Projects/tree/main/Project-1)   || [ Click here to check Live Deployment](https://sarthakchaudhary46.github.io/FrontEnd-Projects/Project-1/)
 
 
 ### Project  2 - [Random Color Generator - Code](https://github.com/SarthakChaudhary46/FrontEnd-Projects/tree/main/Project-2)   || [ Click here to check Live Deployment](https://sarthakchaudhary46.github.io/FrontEnd-Projects/Project-2/)
