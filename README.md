@@ -9,3 +9,5 @@
 
 ### Project  2 - [Random Color Generator - Code](https://github.com/SarthakChaudhary46/FrontEnd-Projects/tree/main/Project-2)   || [ Click here to check Live Deployment](https://sarthakchaudhary46.github.io/FrontEnd-Projects/Project-2/)
 
+
+### Project  3 - [Weather App - Code](https://github.com/SarthakChaudhary46/FrontEnd-Projects/tree/main/Project-3)   || [ Click here to check Live Deployment](https://sarthakchaudhary46.github.io/FrontEnd-Projects/Project-3/)
