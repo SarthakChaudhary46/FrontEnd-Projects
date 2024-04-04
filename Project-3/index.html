@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+    <div class="search">
+        <input type="text" placeholder="Enter Your City Name" spellcheck="false">
+        <button>
+            <img src="assets/search.jpg">
+        </button>
+    </div>
+    <div class="weather">
+        <img src="assets/weather.png" class="weatherIcon">
+        <h1 class="temp">220°C</h1>
+        <h2 class="city">Gurugram</h2>
+    </div>
+</div>
+
+<script>
+    const apiKey = "d1decf7bb7aba16d874d8f2cc8afc16b";
+    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
+
+    const searchBox = document.querySelector(".search input");
+    const searchBtn = document.querySelector(".search button");
+
+    async function checkWeather(city) {
+        try {
+            const response = await fetch(apiUrl + encodeURIComponent(city) + `&appid=${apiKey}`);
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            const data = await response.json();
+
+            console.log(data);
+
+            if (data && data.main && data.main.temp) {
+                document.querySelector(".city").innerHTML = data.name;
+                document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
+            } else {
+                console.error("Data structure doesn't match the expected format:", data);
+            }
+        } catch (error) {
+            console.error('There was a problem with the fetch operation:', error);
+        }
+    }
+
+    // Function to set Gurugram as the default city
+    async function setDefaultCity() {
+        await checkWeather("Gurugram");
+    }
+
+    // Call setDefaultCity when the page loads
+    window.addEventListener("load", setDefaultCity);
+
+    searchBtn.addEventListener("click", () => {
+        checkWeather(searchBox.value);
+    });
+
+</script>
+</body>
+</html>
