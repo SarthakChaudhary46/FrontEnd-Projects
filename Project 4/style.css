@@ -1,0 +1,79 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#355d87, #13b286);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 600px;
+    background: black;
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.image img {
+    width: 80px;
+    height: 80px;
+    margin-right: 150px;
+}
+
+.search {
+    margin-top: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 40px;
+    height: 60px;
+    width: 500px;
+    z-index: 1;
+}
+
+.search button {
+    border: none;
+    outline: none;
+    padding: 15px 50px;
+    background: #ff5945;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 26px;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+#displayText {
+    margin-top: 20px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    text-decoration: line-through;
+}

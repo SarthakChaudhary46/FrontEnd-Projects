@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="text">
+            <span>To Do List</span>
+            <div class="image">
+                <img src="assets/To do.png">
+            </div>
+        </div>
+
+        <div class="search">
+            <input type="text" id="textInput" placeholder="Add Your Task" spellcheck="false">
+            <button id="addButton">
+                Add
+            </button>
+        </div>
+        <div id="displayText"></div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("addButton").addEventListener("click", function() {
+                // Get the text entered in the input field
+                var inputText = document.getElementById("textInput").value.trim();
+                
+                if (inputText !== "") {
+                    // Create a new checkbox element
+                    var checkbox = document.createElement("input");
+                    checkbox.type = "checkbox";
+                    
+                    // Create a new label element
+                    var label = document.createElement("label");
+                    label.textContent = inputText;
+                    
+                    // Append the checkbox and label elements to the display area
+                    var displayArea = document.getElementById("displayText");
+                    displayArea.appendChild(checkbox);
+                    displayArea.appendChild(label);
+                    
+                    // Add event listener to the checkbox to toggle line-through style on label
+                    checkbox.addEventListener("change", function() {
+                        if (checkbox.checked) {
+                            label.style.textDecoration = "line-through";
+                        } else {
+                            label.style.textDecoration = "none";
+                        }
+                    });
+                    
+                    // Add a line break after each checklist item
+                    displayArea.appendChild(document.createElement("br"));
+                    
+                    // Clear the input field after adding the text
+                    document.getElementById("textInput").value = "";
+                }
+            });
+        });
+    </script>
+</body>  
+</html>
