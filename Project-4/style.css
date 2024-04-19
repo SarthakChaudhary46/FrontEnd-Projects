@@ -22,16 +22,16 @@ body {
     align-items: center;
     justify-content: center;
     align-content: center;
-    padding: 20px; /* Add padding to give space from the top and right edges */
+    padding: 20%; /* Add padding to give space from the top and right edges */
     position: relative; /* Make body a positioning context */
 }
 
 #icon {
-    width: 80px;
+    width: 5%;
     cursor: pointer;
     position: absolute; /* Position the moon icon */
-    top: 200px; /* Adjust the top position as needed */
-    right: 650px; /* Adjust the right position as needed */
+    top: 32%; /* Adjust the top position as needed */
+    right: 40%; /* Adjust the right position as needed */
 }
 
 .darkMode {
@@ -78,7 +78,7 @@ body {
     font-weight: 800;
     border-radius: 40px;
     height: 60px;
-    width: 500px;
+    width: 100%;
     z-index: 1;
 }
 
